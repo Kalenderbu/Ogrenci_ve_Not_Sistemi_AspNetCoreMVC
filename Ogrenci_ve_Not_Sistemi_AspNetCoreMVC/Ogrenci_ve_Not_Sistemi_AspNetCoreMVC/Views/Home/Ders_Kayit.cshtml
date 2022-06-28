@@ -1,0 +1,25 @@
+﻿<style>
+    .orta {
+    position: center;
+    margin: auto;
+}
+</style>
+
+<form method="post" asp-controller="Home" asp-action="Ders_Kayit">
+    <div class="container orta">
+        <br />
+        <br />
+       <div class="fw-bold text-center"><h4>DERS KAYIT</h4></div>
+       <br />
+        <div class="row orta">
+            <div class="col-sm-4 orta">
+                <input type="text" class="form-control" id="DersAd" name="DersAd" placeholder="Ders adını giriniz" maxlength="30" required />
+                <br />
+                <a class="btn btn-danger btn-lg" style="margin-right:25px;" asp-controller="Home" asp-action="Dersler">Geri</a>
+                <button type="submit" class="btn btn-success btn-lg">Kaydet</button>
+            </div>
+           
+        </div>
+            
+    </div>
+</form>

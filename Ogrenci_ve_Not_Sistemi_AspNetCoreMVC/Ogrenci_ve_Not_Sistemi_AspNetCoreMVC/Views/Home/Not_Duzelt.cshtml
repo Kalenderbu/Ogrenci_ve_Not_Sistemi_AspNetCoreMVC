@@ -1,0 +1,84 @@
+﻿
+@{
+    Context tVeritabani = new Context();
+
+    Notlar tNotNesne = new Notlar();
+    if(Model != null)
+    {
+        tNotNesne = Model;
+    }
+
+    List<Ogrenciler> tOgrenciListe = tVeritabani.ogrencilerTablosu
+                                                    .OrderBy(x => x.OgrenciAd)
+                                                    .OrderBy(x => x.OgrenciSoyad)
+                                                    .ToList();
+
+    List<Dersler> tDersListe = tVeritabani.derslerTablosu
+                                                    .OrderBy(x => x.DersAd)
+                                                    .ToList();
+
+    Ogrenciler tOgrenciNesne = tVeritabani.ogrencilerTablosu.Find(tNotNesne.OgrenciID);
+    Dersler tDersNesne = tVeritabani.derslerTablosu.Find(tNotNesne.DersID);
+}
+<style>
+    .orta {
+    position: center;
+    margin: auto;
+}
+</style>
+
+<form method="post" asp-controller="Home" asp-action="Not_Duzelt">
+    <div class="container orta">
+        <br />
+        <input type="hidden" name="NotID" id="NotID" value="@tNotNesne.NotID"/>
+        <br />
+       <div class="fw-bold text-center"><h4>NOT DÜZELT</h4></div>
+       <br />
+        <div class="row orta">
+            <div class="col-sm-4 orta">
+            <label for="OgrenciAd" class="form-label">Öğrenci: </label>
+            <select class="form-select" id="OgrenciID" name="OgrenciID">
+            @{
+                for (int i = 1; i <= tOgrenciListe.Count; i++)
+                {
+                        @:<option value="
+                             @tOgrenciListe[i-1].OgrenciID
+                        @:" 
+                        if (tOgrenciListe[i-1].OgrenciID == tOgrenciNesne.OgrenciID)
+                        {
+                            @:selected="selected"
+                        }
+                        @:>
+                            @tOgrenciListe[i-1].OgrenciAd @:&nbsp; @tOgrenciListe[i-1].OgrenciSoyad - @tOgrenciListe[i-1].TCK  
+                        @:</option>
+                }
+            }
+            </select>
+            <br />
+            <label for="DersAd" class="form-label">Ders: </label>
+            <select class="form-select" id="DersID" name="DersID">
+            @{
+                for (int i = 1; i <= tDersListe.Count; i++)
+                {
+                        @:<option value="
+                             @tDersListe[i-1].DersID
+                        @:" 
+                        if (tDersListe[i-1].DersID == tDersNesne.DersID)
+                        {
+                            @:selected="selected"
+                        }
+                        @:>
+                            @tDersListe[i-1].DersAd 
+                        @:</option>
+                }
+            }
+            </select>
+                <br />
+                <input type="number" class="form-control" id="Vize" name="Vize" placeholder="Vize notu giriniz" maxlength="3" min="0" max="100" value="@tNotNesne.Vize" required />
+                <br />
+                <input type="number" class="form-control" id="Final" name="Final" placeholder="Final notu giriniz" maxlength="3" min="0" max="100" value="@tNotNesne.Final" required />
+                <br />
+                <a class="btn btn-danger btn-lg" style="margin-right:25px;" asp-controller="Home" asp-action="Notlar">Geri</a>
+                <button type="submit" class="btn btn-success btn-lg">Kaydet</button>
+            </div>
+</form>

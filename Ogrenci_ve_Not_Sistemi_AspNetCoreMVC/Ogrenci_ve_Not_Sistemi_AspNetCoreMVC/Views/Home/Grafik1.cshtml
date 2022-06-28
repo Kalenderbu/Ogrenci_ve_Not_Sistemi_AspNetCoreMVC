@@ -1,0 +1,74 @@
+﻿@model List<Grafik_Cinsiyet>
+@{
+    var XLabels = Newtonsoft.Json.JsonConvert.SerializeObject(Model.Select(tablom => tablom.VeriBaslik).ToList()); 
+    var YValues = Newtonsoft.Json.JsonConvert.SerializeObject(Model.Select(tablom => tablom.Veri).ToList());
+}
+
+
+
+<div class="container pt-5 ">
+    <div class="row">
+        
+            <canvas id="chart" style="width:80%; height:400px"></canvas>  
+
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script type="text/javascript">  
+        $(function () {  
+            var chartName = "chart";  
+            var ctx = document.getElementById(chartName).getContext('2d');  
+            var data = {  
+                labels: @Html.Raw(XLabels),  
+                datasets: [{  
+                    label: ['Erkek','Kadın','Belirtilmedi'],  
+                    backgroundColor: [  
+                        'rgba(0, 50, 255, 0.6)',  
+                        'rgba(255, 0, 0, 0.4)',  
+                        'rgba(128, 128, 128, 0.4)'
+                    ],  
+                    borderColor: [  
+                        'rgba(0, 0, 255, 0.2)',  
+                        'rgba(255, 0, 0, 0.2)',  
+                        'rgba(128, 128, 128, 0.2)'
+                    ],
+                    borderWidth: 1,  
+                    data: @Html.Raw(YValues)  
+                }]  
+            };  
+  
+            var options = {  
+                maintainAspectRatio: false,  
+                scales: {  
+                    yAxes: [{  
+                        ticks: {  
+                            min: 0,  
+                            beginAtZero: true  
+                        },  
+                        gridLines: {  
+                            display: true,  
+                            color: "rgba(255,99,164,0.2)"  
+                        }  
+                    }],  
+                    xAxes: [{  
+                        ticks: {  
+                            min: 0,  
+                            beginAtZero: true  
+                        },  
+                        gridLines: {  
+                            display: false  
+                        }  
+                    }]  
+                }  
+            };  
+  
+           var myChart = new  Chart(ctx, {  
+                    options: options,  
+                    data: data,  
+                    type:'pie'  
+  
+                });  
+            });  
+</script>

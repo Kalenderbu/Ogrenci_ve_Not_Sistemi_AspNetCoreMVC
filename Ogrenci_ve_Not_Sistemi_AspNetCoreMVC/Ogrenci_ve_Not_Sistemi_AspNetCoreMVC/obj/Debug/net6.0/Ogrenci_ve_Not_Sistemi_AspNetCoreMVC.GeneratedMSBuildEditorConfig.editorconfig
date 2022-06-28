@@ -1,0 +1,80 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Ogrenci_ve_Not_Sistemi_AspNetCoreMVC
+build_property.RootNamespace = Ogrenci_ve_Not_Sistemi_AspNetCoreMVC
+build_property.ProjectDir = D:\Github\Ogrenci_ve_Not_Sistemi_AspNetCoreMVC\Ogrenci_ve_Not_Sistemi_AspNetCoreMVC\Ogrenci_ve_Not_Sistemi_AspNetCoreMVC\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Github\Ogrenci_ve_Not_Sistemi_AspNetCoreMVC\Ogrenci_ve_Not_Sistemi_AspNetCoreMVC\Ogrenci_ve_Not_Sistemi_AspNetCoreMVC
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Github/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Views/Home/Dersler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXJzbGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Views/Home/Ders_Duzelt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXJzX0R1emVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Views/Home/Ders_Kayit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXJzX0theWl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Views/Home/Grafik1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHcmFmaWsxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Views/Home/Notlar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb3RsYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Views/Home/Not_Duzelt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb3RfRHV6ZWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Views/Home/Not_Kayit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb3RfS2F5aXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Views/Home/Ogrenciler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPZ3JlbmNpbGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Views/Home/Ogrenci_Duzelt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPZ3JlbmNpX0R1emVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Views/Home/Ogrenci_Kayit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPZ3JlbmNpX0theWl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Ogrenci_ve_Not_Sistemi_AspNetCoreMVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-uwqcp1oibo

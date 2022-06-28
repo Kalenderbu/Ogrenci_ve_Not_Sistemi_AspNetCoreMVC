@@ -1,0 +1,66 @@
+﻿@{
+    Ogrenciler tOgrenciNesne = new Ogrenciler();
+    if (Model !=null)
+    {
+        tOgrenciNesne = Model;
+    }
+}
+
+
+<style>
+    .orta {
+    position: center;
+    margin: auto;
+}
+</style>
+
+<form method="post" asp-controller="Home" asp-action="Ogrenci_Duzelt">
+    <input type="hidden" name="OgrenciID" id="OgrenciID" value="@tOgrenciNesne.OgrenciID" />
+    <div class="container orta">
+        <br />
+        <br />
+       <div class="fw-bold text-center"><h4>ÖĞRENCİ DÜZELT</h4></div>
+       <br />
+        <div class="row orta">
+            <div class="col-sm-4 orta">
+                <input type="text" class="form-control" id="OgrenciNo" name="OgrenciNo" placeholder="Öğrencinin numarası giriniz"  value="@tOgrenciNesne.OgrenciNo" required />
+                <br />
+                <input type="text" class="form-control" id="OgrenciAd" name="OgrenciAd" placeholder="Öğrencinin adını giriniz" maxlength="30" value="@tOgrenciNesne.OgrenciAd" required />
+                <br />
+                <input type="text" class="form-control" id="OgrenciSoyad" name="OgrenciSoyad" placeholder="Öğrencinin Soyadını giriniz" maxlength="30" value="@tOgrenciNesne.OgrenciSoyad" required />
+                <br />
+                <input type="text" class="form-control" id="TCK" name="TCK" placeholder="TC Kimlik giriniz" maxlength="11" value="@tOgrenciNesne.TCK" required />
+                <br />
+                <select class="form-select" id="Cinsiyet" name="Cinsiyet" >
+                    @{
+                        @:<option value="Belirtilmedi"
+                        if (tOgrenciNesne.Cinsiyet=="Belirtilmedi")
+                        {
+                            @:selected="selected"
+                        }
+                        @:>Belirtilmedi</option>
+
+                        @:<option value="Erkek"
+                        if (tOgrenciNesne.Cinsiyet=="Erkek")
+                        {
+                            @:selected="selected"
+                        }
+                        @:>Erkek</option>
+
+                        @:<option value="Kadın"
+                        if (tOgrenciNesne.Cinsiyet=="Kadın")
+                        {
+                            @:selected="selected"
+                        }
+                        @:>Kadın</option>
+                    }
+                </select>
+                <br />
+                <a class="btn btn-danger btn-lg" style="margin-right:25px;" asp-controller="Home" asp-action="Ogrenciler">Geri</a>
+                <button type="submit" class="btn btn-success btn-lg">Kaydet</button>
+            </div>
+           
+        </div>
+            
+    </div>
+</form>

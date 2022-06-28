@@ -1,0 +1,37 @@
+﻿<style>
+    .orta {
+    position: center;
+    margin: auto;
+}
+</style>
+
+<form method="post" asp-controller="Home" asp-action="Ogrenci_Kayit">
+    <div class="container orta">
+        <br />
+        <br />
+       <div class="fw-bold text-center"><h4>ÖĞRENCİ KAYIT</h4></div>
+       <br />
+        <div class="row orta">
+            <div class="col-sm-4 orta">
+                <input type="text" class="form-control" id="OgrenciNo" name="OgrenciNo" placeholder="Öğrencinin numarası giriniz" maxlength="30" required />
+                <br />
+                <input type="text" class="form-control" id="OgrenciAd" name="OgrenciAd" placeholder="Öğrencinin adını giriniz" maxlength="30" required />
+                <br />
+                <input type="text" class="form-control" id="OgrenciSoyad" name="OgrenciSoyad" placeholder="Öğrencinin Soyadını giriniz" maxlength="30" required />
+                <br />
+                <input type="text" class="form-control" id="TCK" name="TCK" placeholder="TC Kimlik giriniz" maxlength="11" required />
+                <br />
+                <select class="form-select" id="Cinsiyet" name="Cinsiyet" >
+                    <option value="Belirtilmedi">Belirtilmedi</option>
+                    <option value="Erkek">Erkek</option>
+                    <option value="Kadın">Kadın</option>
+                </select>
+                <br />
+                <a class="btn btn-danger btn-lg" style="margin-right:25px;" asp-controller="Home" asp-action="Ogrenciler">Geri</a>
+                <button type="submit" class="btn btn-success btn-lg">Kaydet</button>
+            </div>
+           
+        </div>
+            
+    </div>
+</form>
